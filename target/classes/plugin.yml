@@ -1,0 +1,19 @@
+name: PrivateChat
+version: '1.0-SNAPSHOT'
+main: top.blocksp.privatechat.PrivateChat
+api-version: 1.13
+authors: [ PhyFaLizi ]
+permissions:
+  privatechat.send:
+    description: Permission to send private messages.
+    default: true
+  privatechat.block:
+    description: Block private messages from other players.
+commands:
+  privatechat:
+    description: Send a private message to another player.
+    usage: /privatechat <player> <message>
+    permission: privatechat.send
+    aliases:
+      - pc
+      - chat
